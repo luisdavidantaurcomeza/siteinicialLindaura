@@ -68,6 +68,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 20px;
+    align-items: center;
 }
 
 .quadrocima {
@@ -75,8 +76,67 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px;
+    width: 100%;
 }
 
+/* ... (styles for .box1, .box2, etc. remain the same) ... */
+
+.quadrobaixo {
+    background-color: #f7b2b0;
+    border: 2px solid black;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.confirmation-box {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+    border: 2px solid black;
+    background-color: #b0f7b2; /* Light green background */
+}
+
+.confirmation-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.confirmation-title {
+    background-color: #7af281; /* Darker green for the title */
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+.confirmation-button {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+}
+
+.confirmation-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #b0f7b2;
+    padding: 10px;
+    border: 1px solid black;
+    transition: background-color 0.3s;
+}
+
+.confirmation-link:hover {
+    background-color: #7af281;
+}
 .box1, .box2 {
     width: 100%;
     margin-bottom: 20px;
@@ -172,5 +232,11 @@ body {
     .box3content img {
         width: 50px;
         height: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .confirmation-box {
+        max-width: 100%;
     }
 }
